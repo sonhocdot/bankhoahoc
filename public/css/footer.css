@@ -1,0 +1,41 @@
+.bg-183e72 {
+  background-color: #183e72;
+}
+
+.bg-footer {
+  background-image: url('/image/futto.jpg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: auto 360px;
+}
+
+.w-90{
+  width: 90%;
+}
+
+.icon {
+  height: 30px;
+  border-radius: 10px;
+}
+
+
+
+.form-control {
+  background-color: #145982!important;
+  color: white!important;
+}
+.form-control:visited {
+  background-color: #145982!important;
+  color: white!important;
+}
+.form-control:hover {
+  background-color: #145982!important;
+  color: white!important;
+}
+
+.form-control:active {
+  background-color: #145982!important;
+  color: white!important;
+}

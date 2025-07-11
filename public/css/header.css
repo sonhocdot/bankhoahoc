@@ -1,0 +1,44 @@
+.bg-145982 {
+    background-color: #145982;
+}
+
+.bg-140a2c {
+    background-color: #140a2c;
+}
+
+header {
+    z-index: 2;
+}
+
+#carouselExampleFade{
+    z-index: 1;
+}
+
+.carousel-caption{
+    z-index: 3;
+}
+
+.logo {
+    height: 70px;
+}
+
+body {
+    height: 1000px;
+}
+
+.dropdown:hover .dropdown-menu {display:block;color: #3581c4}
+/* .dropdown-item:hover{color: white;   background: linear-gradient(to right, #4265a6  , #319dd7 );} */
+.dropdown-item:hover{background-color: white;}
+.dropdown-item a:hover{color: white;}
+.dropdown-item{
+    padding-top:10px;
+    padding-bottom:15px;
+    width:100%
+}
+/* .dropdown{
+    transition: 10s;
+} */
+
+.dropdown-navbar{
+    width: 100%;
+}

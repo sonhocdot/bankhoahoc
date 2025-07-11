@@ -1,0 +1,17 @@
+#baivietpost {
+  overflow: hidden;
+  position: relative;
+}
+
+#baivietpost img {
+  width: 100%;
+  height: 280px;
+  transition: all 1s ease-out;
+  position: relative;
+  z-index: 2;
+}
+
+#baivietpost:hover img {
+  transform: scale(1.1, 1.1);
+  z-index: 9;
+}

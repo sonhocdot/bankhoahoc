@@ -1,0 +1,171 @@
+.text--115a80 {
+  color: #115a80;
+}
+.text--3581c4 {
+  color: #3581c4;
+}
+.text--4265a6 {
+  color: #4265a6;
+}
+
+.bg-D3D3D3{
+  background-color: #D3D3D3;
+  opacity: 50%;
+}
+
+.bg-e5e5e5{
+  background-color: #e5e5e5;
+}
+.w-400px{
+  width: 400px;
+}
+
+.w-350px{
+  width:350px;
+}
+
+.h-100px{
+  height: 100px;
+}
+
+.h-20px{
+  height: 20px;
+}
+
+.border--bottom--203864{
+  border-bottom: 2px solid #203864;
+}
+
+
+.main--title {
+  color: #203864;
+  border-bottom: 2px solid #203864;
+}
+
+.main--title--text:hover {
+  color: #115a80;
+}
+
+a:hover {
+  color: #115a80;
+}
+
+.service {
+  height: 700px;
+}
+
+.all--detail:hover {
+  color: #115a80;
+}
+
+.all--detail{
+  border-width: 2px;
+  border-color: #115a80;
+}
+
+.baivietnoibat:hover {
+  color: white;
+  background-image: linear-gradient(to right, #183e72, #319dd7);
+  border-color: inherit;
+  transition: 0.2s;
+}
+
+#baivietpost {
+  overflow: hidden;
+  position: relative;
+}
+
+#baivietpost img {
+  width: 100%;
+  height: 280px;
+  transition: all 1s ease-out;
+  position: relative;
+  z-index: 2;
+}
+
+#baivietpost:hover img {
+  transform: scale(1.1, 1.1);
+  z-index: 9;
+}
+
+.banner img {
+  transition: all 6s ease-out;
+  z-index: 2;
+  animation-name: main--banner;
+  animation-duration: 2s;
+}
+
+@keyframes main--banner {
+  from {transform: scale(1.25, 1.25);}
+  to {transform: scale(1, 1);}
+}
+
+.all--detail:hover {
+  background-image: linear-gradient(to right, #183e72, #319dd7);
+}
+
+.card--text--news {
+  height: 20px;
+  color: black;
+}
+
+.list-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 -16px;
+}
+
+.card-infor {
+  min-width: 350px;
+  background-color: #fff;
+  margin: 15px 15px;
+}
+
+#dangkytuva {
+  width: 100%;
+  float: left;
+}
+
+#lienhe {
+  width: 100%;
+  float: left;
+}
+
+#gioithieu {
+  width: 100%;
+  float: left;
+}
+
+body {
+  height: 100%;
+}
+
+.bg-646464{
+  background-color: #646464;
+}
+
+main {
+    position: relative;
+}
+
+main:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    background-color: inherit; */
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;
+}
+
+.new--title{
+  border-top: 3px solid #115a80;
+}
+

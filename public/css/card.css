@@ -1,0 +1,35 @@
+.card-img-top{
+    height: 240px;
+}
+
+/* .card-hover{
+    width: 100%;
+} */
+
+/*.card-text{*/
+/*    color:#4265a6;*/
+/*    font-family:'Segoe UI';*/
+/*    text-decoration:none;*/
+/*}*/
+
+.card-hover{
+    box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.14), 10px 10px 3px -10px rgba(0,0,0,.12);
+}
+
+.card-hover:hover{
+    transition: 0.5s;
+    box-shadow: 10px 10px 10px 2px rgba(0,0,0,.12) , -10px -5px 10px 2px rgba(0,0,0,.12);
+    border-color: white;
+    cursor: pointer;
+}
+
+.card-title{
+    height: 47px;
+}
+
+a:hover{
+    color: black;
+}
+.card-news{
+    width: 300px;
+}
