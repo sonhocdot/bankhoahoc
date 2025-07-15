@@ -117,6 +117,24 @@ Route::prefix('/admin')->group(function () {
         Route::get('/delete-gio-hang/{id}', 'deleteGioHang')->name('delete_gio_hang');
         Route::get('/find-gio-hang', 'findGioHang')->name('find_gio_hang');
     });
+    Route::controller(\App\Http\Controllers\Admin\QuizController::class)->group(function () {
+        Route::get('/them-bai-trac-nghiem', 'themTracNghiem')->name('them_trac_nghiem');
+        Route::post('/insert-bai-trac-nghiem', 'insertTracNghiem')->name('insert_trac_nghiem');
+        Route::get('/index-bai-trac-nghiem', 'indexTracNghiem')->name('index_trac_nghiem');
+        Route::get('/edit-bai-trac-nghiem/{id}', 'pageEditTracNghiem')->name('page_edit_trac_nghiem');
+        Route::post('/edit-bai-trac-nghiem', 'editTracNghiem')->name('edit_trac_nghiem');
+        Route::get('/delete-bai-trac-nghiem/{id}', 'deleteTracNghiem')->name('delete_trac_nghiem');
+        Route::get('/find-bai-trac-nghiem', 'findTracNghiem')->name('find_trac_nghiem');
+    });
+    Route::controller(\App\Http\Controllers\Admin\QuizAttemptController::class)->group(function () {
+        Route::get('/them-history-trac-nghiem', 'themHistoryTracNghiem')->name('them_history_trac_nghiem');
+        Route::post('/insert-history-trac-nghiem', 'insertHistoryTracNghiem')->name('insert_history_trac_nghiem');
+        Route::get('/index-history-trac-nghiem', 'indexHistoryTracNghiem')->name('index_history_trac_nghiem');
+        Route::get('/edit-history-trac-nghiem/{id}', 'pageEditHistoryTracNghiem')->name('page_edit_history_trac_nghiem');
+        Route::post('/edit-history-trac-nghiem', 'editHistoryTracNghiem')->name('edit_history_trac_nghiem');
+        Route::get('/delete-history-trac-nghiem/{id}', 'deleteHistoryTracNghiem')->name('delete_history_trac_nghiem');
+        Route::get('/find-history-trac-nghiem', 'findHistoryTracNghiem')->name('find_history_trac_nghiem');
+    });
 });
 
 Route::controller(GioHangController::class)->group(function () {
@@ -174,4 +192,8 @@ Route::controller(App\Http\Controllers\Client\khoahoc\PostController::class)->gr
     // Route::post('/khoa-hoc/report-comment', 'reportComment')->name('khoahoc.reportComment');
     // Route::post('/khoa-hoc/reply-comment', 'replyComment')->name('khoahoc.replyComment');
 
+});
+Route::controller(App\Http\Controllers\Client\tracnghiem\QuizController::class)->group(function () {
+    Route::get('/tracnghiem/{id}', 'show')->name('quiz.show');
+    Route::post('/tracnghiem/{id}/submit', 'submit')->name('quiz.submit');
 });

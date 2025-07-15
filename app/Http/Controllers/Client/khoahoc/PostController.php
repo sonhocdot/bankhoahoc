@@ -55,10 +55,7 @@ class PostController extends Controller
             $course->lesson_count = count($lessons);
             $course->author_course = DB::table('users')->where('id', $course->id_author)->first();
 
-            // $commentCount = DB::table('comments')
-            //     ->where('id_course', $course->id)
-            //     ->where('show', 1)
-            //     ->count();
+          
             $comments = DB::table('comments')
                 ->select('comments.id', 'content', 'display_name', 'comments.created_at', 'rate', 'avatar')
                 ->join('users', 'users.id', 'comments.id_user')

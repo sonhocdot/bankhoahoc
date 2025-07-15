@@ -92,7 +92,7 @@
                             <li class="nav-item">
                                 <a
                                     class="nav-link "
-                                    href=""
+                                    href="{{route('index_trac_nghiem')}}"
                                     title="Calendar"
                                 >
                                     <span class="tio-circle nav-indicator-icon"></span>
@@ -102,7 +102,7 @@
                             <li class="nav-item">
                                 <a
                                     class="nav-link "
-                                    href=""
+                                    href="{{route('index_history_trac_nghiem')}}"
                                     title="Kanban"
                                 >
                                     <span class="tio-circle nav-indicator-icon"></span>
