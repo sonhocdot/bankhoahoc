@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\BaiVietController;
+use App\Http\Controllers\Admin\BaoGiaController;
 use App\Http\Controllers\Admin\KhoaHocController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\UserController;
@@ -135,7 +136,16 @@ Route::prefix('/admin')->group(function () {
         Route::get('/delete-history-trac-nghiem/{id}', 'deleteHistoryTracNghiem')->name('delete_history_trac_nghiem');
         Route::get('/find-history-trac-nghiem', 'findHistoryTracNghiem')->name('find_history_trac_nghiem');
     });
-});
+    Route::controller(BaoGiaController::class)->group(function () {
+        Route::get('/them-bao-gia', 'themBaoGia')->name('them_bao_gia');
+        Route::post('/insert-bao-gia', 'insertBaoGia')->name('insert_bao_gia');
+        Route::get('/index-bao-gia', 'indexBaoGia')->name('index_bao_gia');
+        Route::get('/edit-bao-gia/{id}', 'pageEditBaoGia')->name('page_edit_bao_gia');
+        Route::post('/edit-bao-gia', 'editBaoGia')->name('edit_bao_gia');
+        Route::get('/delete-bao-gia/{id}', 'deleteBaoGia')->name('delete_bao_gia');
+        Route::get('/find-bao-gia', 'findBaoGia')->name('find_bao_gia');
+    });
+});   
 
 Route::controller(GioHangController::class)->group(function () {
     Route::get('/add-to-cart/{id}', 'addToCart')->name('add_to_cart');
@@ -154,9 +164,6 @@ Route::controller(MainController::class)->group(function () {
     Route::get('/khoahoc', 'khoahoc')->name('xdsoft.khoahoc');
     Route::get('/baiviet', 'dohoa')->name('xdsoft.baiviet');
     Route::get('/chitiet/{type?}/{id?}', 'chitiet')->name('xdsoft.chitiet');
-    Route::get('/chitiet/tintuc/posts/{news}', 'detail_topic')->name('xdsoft.detail.topic');
-    Route::get('/chitiet/tintuc/sub/{news}', 'detail_topic_v2')->name('xdsoft.detail.topic.small');
-    Route::get('/chitiet/tintuc/chude/{news}', 'detail_chude')->name('xdsoft.detail.chude');
     Route::get('/giohang', 'cart')->name('xdsoft.cart');
     Route::post('/insert/baogia', 'insert_bao_gia')->name('xdsoft.create.baogia');
     Route::get('/tracnghiem', 'tracnghiem')->name('xdsoft.tracnghiem');

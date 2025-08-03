@@ -76,7 +76,6 @@ class GioHangController extends Controller
                 return redirect('/login')->with('err', $err);
             }
             $course = Course::findOrFail($id);
-            // $cart = session()->get('cart', []);
             $accountId = session('account_id');
             $user = DB::table('users')->where('id', $accountId)->first();
             $invoice = DB::table('invoices')
@@ -120,7 +119,7 @@ class GioHangController extends Controller
         }
     }
 
-    
+
 
     public function deleteCartItem(Request $request)
     {

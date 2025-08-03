@@ -68,8 +68,7 @@ class QuizController extends Controller
             if ($tieu_de_processed) {
                 $tieu_de_processed = preg_replace('/\s+/', " ", $tieu_de_processed); // Xử lý
             } else {
-                // Xử lý trường hợp tieu_de là null hoặc rỗng nếu cần, ví dụ:
-                // return redirect()->back()->withInput()->with('fail', 'Tiêu đề không được để trống.');
+
                 $tieu_de_processed = ''; // Hoặc giá trị mặc định
             }
             DB::table('quizzes')->insert([
@@ -132,13 +131,13 @@ class QuizController extends Controller
                 }
 
                 $tieu_de_processed2 = $request->input('title'); // Lấy giá trị gốc
-            if ($tieu_de_processed2) {
-                $tieu_de_processed2 = preg_replace('/\s+/', " ", $tieu_de_processed2); // Xử lý
-            } else {
-                // Xử lý trường hợp tieu_de là null hoặc rỗng nếu cần, ví dụ:
-                // return redirect()->back()->withInput()->with('fail', 'Tiêu đề không được để trống.');
-                $tieu_de_processed2 = ''; // Hoặc giá trị mặc định
-            }
+                if ($tieu_de_processed2) {
+                    $tieu_de_processed2 = preg_replace('/\s+/', " ", $tieu_de_processed2); // Xử lý
+                } else {
+                    // Xử lý trường hợp tieu_de là null hoặc rỗng nếu cần, ví dụ:
+                    // return redirect()->back()->withInput()->with('fail', 'Tiêu đề không được để trống.');
+                    $tieu_de_processed2 = ''; // Hoặc giá trị mặc định
+                }
 
                 DB::table('quizzes')
                     ->where('quizzes.id', '=', $request->id)

@@ -2,15 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGDC9EN97L"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-ZGDC9EN97L');
-    </script>
+   
     <meta charset="utf-8" />
     {{--
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />--}}
@@ -23,10 +15,10 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="{{Request::root().'/css/css_admin/theme.min.css'}}" />
-    <link rel="stylesheet" href="{{Request::root().'/css/css_admin/vendor.min.css'}}" />
-    <link rel="stylesheet" href="{{Request::root().'/js/libs_admin/icon-set/style.css'}}" />
-    <title>Đổi mật khẩu | TechWave</title>
+    <link rel="stylesheet" href="asset('/css/css_admin/theme.min.css')}}" />
+    <link rel="stylesheet" href="asset('/css/css_admin/vendor.min.css')}}" />
+    <link rel="stylesheet" href="asset('/js/libs_admin/icon-set/style.css')}}" />
+    <title>Đổi mật khẩu </title>
 </head>
 
 <body>
@@ -107,8 +99,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- JS Implementing Plugins -->
-    <script src="{{Request::root().'/js/js_admin/vendor.min.js'}}"></script>
-    <script src="{{Request::root().'/js/js_admin/theme.min.js'}}"></script>
+    <script src="{{asset('/js/js_admin/vendor.min.js')}}"></script>
+    <script src="{{asset('/js/js_admin/theme.min.js')}}"></script>
 
 </body>
 

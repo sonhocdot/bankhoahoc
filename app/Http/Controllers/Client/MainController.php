@@ -192,6 +192,10 @@ class MainController extends Controller
     public function insert_bao_gia(Request $request)
     {
         try {
+            if (!session()->has('account_id')) {
+                $err = 'Vui lòng đăng nhập để thực hiện tác vụ này!';
+                return redirect('/login')->with('err', $err);
+            }
             DB::table('advices')->insert([
                 'thong_tin' => $request->data_description,
                 'tinh_thanh' => $request->data_province,

@@ -12,9 +12,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="{{ Request::root() . '/css/css_admin/theme.min.css' }}" />
-    <link rel="stylesheet" href="{{ Request::root() . '/css/css_admin/vendor.min.css' }}" />
-    <link rel="stylesheet" href="{{ Request::root() . '/js/js_admin/icon-set/style.css' }}" />
+    <link rel="stylesheet" href="{{ asset('/css/css_admin/theme.min.css' )}}" />
+    <link rel="stylesheet" href="{{ asset('/css/css_admin/vendor.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/js/js_admin/icon-set/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('/css/css_admin/input.css') }}">
     <title>Quản trị CodeFun</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.10.9/tinymce.min.js"></script>
@@ -97,12 +97,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- JS Implementing Plugins -->
-    <script src="{{ Request::root() . '/js/js_admin/vendor.min.js' }}"></script>
-    <script src="{{ Request::root() . '/js/js_admin/theme.min.js' }}"></script>
+    <script src="{{ asset('/js/js_admin/vendor.min.js') }}"></script>
+    <script src="{{ asset('/js/js_admin/theme.min.js' )}}"></script>
 
 
     {{-- Tìm kiếm và chọn bài viết liên quan --}}
-    <script src="{{ Request::root() . '/js/js_admin/multisearch.js' }}"></script>
+    <script src="{{ asset('/js/js_admin/multisearch.js') }}"></script>
     <script>
         var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
             .matches

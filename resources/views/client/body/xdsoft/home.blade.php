@@ -172,15 +172,7 @@
                 </div>
               </div>
             </section>
-            {{-- <section class="container-fluid g-2 text-center mb-2 pt-4">
-              <div class="row justify-content-center align-items-center g-2">
-                <div class="col-12">
-                  <h2 class="text-decoration-underline text--115a80" style="font-family: 'Segoe UI', Arial, sans-serif; font-weight:600!important;">
-                    DỊCH VỤ CỦA CHÚNG TÔI
-                  </h2>
-                </div>
-              </div>
-            </section> --}}
+           
 
             <section class="container-fluid p-0 ">
               <div class="row g-0 ps-xxl-0 pe-xxl-0 ps-xl-0 pe-xl-0 mx-auto" style="width:80%; padding:50px 0 100px 0;">
@@ -245,11 +237,7 @@
                           <div class="text w-100 h-100 overlay-content px-3 py-4 d-flex align-items-center">
                             <div class="text-dark" style="font-size: 16px;font-family: 'Segoe UI', Arial, sans-serif;">Dịch vụ hỗ trợ nhanh chóng, sẵn sàng giải đáp mọi thắc mắc của học viên
                             </div>
-                            {{-- <div style="display: flex; justify-content: flex-end;">
-                              <a href="{{ route('xdsoft.thietke')}}">
-                                <div class="bg-145982 text-white p-2">Xem thêm</div>
-                              </a>
-                            </div> --}}
+                            
                           </div>
                         </div>
                         </a>

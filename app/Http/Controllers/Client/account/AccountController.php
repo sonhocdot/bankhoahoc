@@ -253,7 +253,6 @@ class AccountController extends Controller
                 $file_image = $request->file('avatar');
                 $ext = $request->file('avatar')->extension();
                 $name_image = now()->toDateString() . '-' . time() . '-' . 'post_img.' . $ext;
-                $path = public_path('images/') . $name_image;
                 $file_image->move(public_path('images'), $name_image);
                 DB::table('users')
                     ->where('users.id', '=', $request->id)
